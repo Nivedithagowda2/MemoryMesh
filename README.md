@@ -88,6 +88,7 @@ MemoryMesh is designed as a persistent AI memory layer that connects an AI agent
                          │ Cloud Artifacts      │
                          └──────────────────────┘
 
+```
 ---
 
 
