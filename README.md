@@ -88,24 +88,8 @@ MemoryMesh is designed as a persistent AI memory layer that connects an AI agent
                          │ Cloud Artifacts      │
                          └──────────────────────┘
 
-## Architecture
+---
 
-```
-Agent A (DevOps)          Agent B (Onboarding)
-      |                          |
-      |  remember()              |  recall()
-      v                          v
-        CockroachDB (shared memory layer)
-         - structured memory table
-         - VECTOR column + vector index (semantic search)
-         - memory_recalls audit log (proves cross-agent reuse)
-      |
-      v
-FastAPI app  --(Mangum)-->  AWS Lambda / API Gateway
-      |
-      v
-Amazon Bedrock (optional) — Titan embeddings for real semantic search
-```
 
 **CockroachDB tools used:**
 1. **Distributed Vector Indexing** — the `memories` table's `embedding`
