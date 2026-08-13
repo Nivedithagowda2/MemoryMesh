@@ -14,17 +14,17 @@ CockroachDB's vector index) and gets the answer instantly instead of
 reasoning from scratch.
 
 ---
-## 🎥 Demo Video
+# 🧠 MemoryMesh
 
-Watch the MemoryMesh demo to see the complete system in action.
+> Persistent AI memory powered by CockroachDB + Amazon S3
 
-### 🌐 Live Demo
+## 🎥 Demo
 
-▶️ [**Try MemoryMesh Live**](https://memorymesh-3hee.onrender.com)
+[![Watch MemoryMesh Demo](https://img.youtube.com/vi/uqlHhuhQl70/maxresdefault.jpg)](https://youtu.be/uqlHhuhQl70)
 
-### ▶️ Video Demo
+**▶️ Click the image above to watch the full demo on YouTube.**
 
-▶️ [**Watch the MemoryMesh Demo on YouTube**](https://youtu.be/uqlHhuhQl70)
+🌐 **[Try the Live Demo](https://memorymesh-3hee.onrender.com)**
 
 
 
