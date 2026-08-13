@@ -37,6 +37,56 @@ The demo shows:
 -  Memory storage and retrieval
 -  FastAPI backend workflow
 
+## 🏗️ Architecture
+
+MemoryMesh is designed as a persistent AI memory layer that connects an AI agent with **CockroachDB** for structured memory and **Amazon S3** for cloud-based object storage.
+
+```text
+                         ┌──────────────────────┐
+                         │      User / Client   │
+                         │   Web App / API Call │
+                         └──────────┬───────────┘
+                                    │
+                                    ▼
+                         ┌──────────────────────┐
+                         │   MemoryMesh Agent   │
+                         │                      │
+                         │ • Understand context │
+                         │ • Retrieve memory    │
+                         │ • Update memory      │
+                         └──────────┬───────────┘
+                                    │
+                                    ▼
+                         ┌──────────────────────┐
+                         │    FastAPI Backend   │
+                         │                      │
+                         │ • API endpoints      │
+                         │ • Agent orchestration│
+                         │ • Memory operations  │
+                         └──────────┬───────────┘
+                                    │
+                       ┌────────────┴────────────┐
+                       │                         │
+                       ▼                         ▼
+             ┌──────────────────┐      ┌──────────────────┐
+             │   CockroachDB    │      │    Amazon S3     │
+             │                  │      │                  │
+             │ • Persistent     │      │ • Object storage │
+             │   memory         │      │ • Large artifacts│
+             │ • Metadata       │      │ • Cloud files    │
+             │ • Memory records │      │                  │
+             └────────┬─────────┘      └────────┬─────────┘
+                      │                         │
+                      └────────────┬────────────┘
+                                   │
+                                   ▼
+                         ┌──────────────────────┐
+                         │   Persistent Agent   │
+                         │       Memory         │
+                         │                      │
+                         │ Context + Metadata + │
+                         │ Cloud Artifacts      │
+                         └──────────────────────┘
 
 ## Architecture
 
@@ -207,12 +257,21 @@ memorymesh/
 └── README.md
 ```
 
-## What to say in your submission narrative
+##  Conclusion
 
-- **CockroachDB tools:** Distributed Vector Indexing (semantic memory
-  search across agents) + MCP Server (dev-time cluster inspection).
-- **AWS services:** Lambda (serverless agent execution), optionally Bedrock.
-- **What makes this "agentic memory," not just a database:** memory is
-  written by one agent and consumed by a *different* agent it was never
-  designed to talk to — the `memory_recalls` table is a real audit log
-  proving cross-agent reuse happened, with measured time saved.
+MemoryMesh demonstrates how persistent memory can make AI agents more useful, reliable, and context-aware across multiple interactions.
+
+By combining **CockroachDB** for structured and persistent memory with **Amazon S3** for cloud-based artifact storage, MemoryMesh provides a scalable foundation for storing, retrieving, and managing agent context.
+
+The project was built to explore how AI agents can move beyond short-lived conversations and maintain useful long-term context while keeping memory organized and accessible.
+
+###  Future Scope
+
+- 🔹 Smarter memory retrieval and ranking
+- 🔹 Automatic memory summarization
+- 🔹 Semantic/vector-based memory search
+- 🔹 Memory expiration and lifecycle management
+- 🔹 Multi-agent shared memory
+- 🔹 Improved observability and memory analytics
+
+**MemoryMesh is a step toward building AI agents that can remember, learn from context, and deliver more personalized interactions over time.**
