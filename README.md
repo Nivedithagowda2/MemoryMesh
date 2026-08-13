@@ -15,6 +15,23 @@ reasoning from scratch.
 
 ---
 
+## 🎥 Demo Video
+
+Watch the MemoryMesh demo to see the complete system in action:
+
+▶️ https://memorymesh-3hee.onrender.com
+
+▶️ https://youtu.be/uqlHhuhQl70
+
+
+The demo shows:
+-  AI agent interaction
+-  Persistent memory with CockroachDB
+-  Amazon S3 integration
+-  Memory storage and retrieval
+-  FastAPI backend workflow
+
+
 ## Architecture
 
 ```
