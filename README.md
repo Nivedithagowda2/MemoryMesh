@@ -24,7 +24,9 @@ reasoning from scratch.
 
 **▶️ Click the image above to watch the full demo on YouTube.**
 
-🌐 **[Try the Live Demo](https://memorymesh-3hee.onrender.com)**
+### 🌐 Live Demo
+
+▶️ [**Try MemoryMesh Live**](https://memorymesh-3hee.onrender.com)
 
 
 
