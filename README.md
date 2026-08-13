@@ -14,14 +14,18 @@ CockroachDB's vector index) and gets the answer instantly instead of
 reasoning from scratch.
 
 ---
-
 ## 🎥 Demo Video
 
-Watch the MemoryMesh demo to see the complete system in action:
+Watch the MemoryMesh demo to see the complete system in action.
 
-▶️ https://memorymesh-3hee.onrender.com
+### 🌐 Live Demo
 
-▶️ https://youtu.be/uqlHhuhQl70
+▶️ [**Try MemoryMesh Live**](https://memorymesh-3hee.onrender.com)
+
+### ▶️ Video Demo
+
+▶️ [**Watch the MemoryMesh Demo on YouTube**](https://youtu.be/uqlHhuhQl70)
+
 
 
 The demo shows:
