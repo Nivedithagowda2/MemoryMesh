@@ -18,7 +18,7 @@ reasoning from scratch.
 
 > Persistent AI memory powered by CockroachDB + Amazon S3
 
-## 🎥 Demo
+##  Demo
 
 [![Watch MemoryMesh Demo](https://img.youtube.com/vi/uqlHhuhQl70/maxresdefault.jpg)](https://youtu.be/uqlHhuhQl70)
 
