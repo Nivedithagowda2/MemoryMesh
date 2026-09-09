@@ -12,7 +12,7 @@ def main():
     print()
 
     print("STEP 1: Agent A (DevOps) hits a real incident for the first time.\n")
-    result_a = agent_a_devops.run(reasoning_seconds=8.0)
+    result_a = agent_a_devops.run(reasoning_seconds=8.0)  
 
     print("-" * 70)
     print("STEP 2: Agent B (Onboarding) — a totally different agent, different")
