@@ -5,7 +5,7 @@ This is the exact script to screen-record for your submission video.
 from app import agent_a_devops, agent_b_onboarding, memory_store
 
 
-def main():
+def main():        
     print("=" * 70) 
     print("MEMORYMESH DEMO — shared memory across two independent AI agents")
     print("=" * 70)
