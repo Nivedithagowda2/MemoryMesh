@@ -6,7 +6,7 @@ from app import agent_a_devops, agent_b_onboarding, memory_store
 
 
 def main():
-    print("=" * 70)
+    print("=" * 70) 
     print("MEMORYMESH DEMO — shared memory across two independent AI agents")
     print("=" * 70)
     print()
