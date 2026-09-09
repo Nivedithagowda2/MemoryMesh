@@ -10,7 +10,6 @@ def main():
     print("MEMORYMESH DEMO — shared memory across two independent AI agents")
     print("=" * 70)
     print()
-
     print("STEP 1: Agent A (DevOps) hits a real incident for the first time.\n")
     result_a = agent_a_devops.run(reasoning_seconds=8.0)  
 
