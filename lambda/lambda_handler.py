@@ -13,7 +13,7 @@ Deploy notes:
   9. Enable a Function URL  
 """  
 from mangum import Mangum
-from app.main import app
+from app.main import app 
  
 handler = Mangum(app)
  
