@@ -9,7 +9,7 @@ Deploy notes:
   5. cd package && zip -r ../memorymesh_lambda.zip . && cd .. 
   6. Create Lambda function (Python 3.12), upload memorymesh_lambda.zip
   7. Handler: lambda_handler.handler
-  8. Set env vars (DATABASE_URL, AWS_REGION, USE_BEDROCK, etc.)
+  8. Set env vars (DATABASE_URL, AWS_REGION, USE_BEDROCK, etc.) 
   9. Enable a Function URL  
 """  
 from mangum import Mangum
