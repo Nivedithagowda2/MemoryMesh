@@ -12,7 +12,7 @@ Deploy notes:
   8. Set env vars (DATABASE_URL, AWS_REGION, USE_BEDROCK, etc.) 
   9. Enable a Function URL  
 """   
-from mangum import Mangum
+from mangum import Mangum 
 from app.main import app 
  
 handler = Mangum(app)
