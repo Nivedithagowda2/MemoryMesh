@@ -2,7 +2,7 @@
 AWS Lambda entry point for MemoryMesh. Wraps the FastAPI app with Mangum. 
 
 Deploy notes:
-  1. pip install -r requirements.txt -t package/
+  1. pip install -r requirements.txt -t package/ 
   2. pip install mangum -t package/
   3. cp -r app package/
   4. cp lambda/lambda_handler.py package/ 
