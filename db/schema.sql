@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS memories (
     agent_id        UUID NOT NULL REFERENCES agents(agent_id),  
     memory_type     STRING NOT NULL,    
     task_summary    STRING NOT NULL,  
-    context         STRING,  
+    context         STRING,   
     resolution      STRING,  
     confidence      FLOAT NOT NULL DEFAULT 0.8,  
     embedding       VECTOR(384) NOT NULL,
