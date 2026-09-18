@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS agents (
 CREATE TABLE IF NOT EXISTS memories ( 
     memory_id       UUID PRIMARY KEY DEFAULT gen_random_uuid(),  
     agent_id        UUID NOT NULL REFERENCES agents(agent_id), 
-    memory_type     STRING NOT NULL,
+    memory_type     STRING NOT NULL, 
     task_summary    STRING NOT NULL,
     context         STRING,
     resolution      STRING, 
