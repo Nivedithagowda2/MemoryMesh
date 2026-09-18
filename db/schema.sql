@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS memories (
     memory_type     STRING NOT NULL,  
     task_summary    STRING NOT NULL,  
     context         STRING,
-    resolution      STRING, 
+    resolution      STRING,  
     confidence      FLOAT NOT NULL DEFAULT 0.8,  
     embedding       VECTOR(384) NOT NULL,
     created_at      TIMESTAMPTZ NOT NULL DEFAULT now(),
