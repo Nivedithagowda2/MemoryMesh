@@ -5,7 +5,7 @@ Deploy notes:
   1. pip install -r requirements.txt -t package/ 
   2. pip install mangum -t package/  
   3. cp -r app package/
-  4. cp lambda/lambda_handler.py package/   
+  4. cp lambda/lambda_handler.py package/    
   5. cd package && zip -r ../memorymesh_lambda.zip . && cd ..    
   6. Create Lambda function (Python 3.12), upload memorymesh_lambda.zip 
   7. Handler: lambda_handler.handler
