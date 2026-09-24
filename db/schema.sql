@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS agents (
     created_at    TIMESTAMPTZ NOT NULL DEFAULT now()
 ); 
  
-CREATE TABLE IF NOT EXISTS memories (   
+CREATE TABLE IF NOT EXISTS memories (    
     memory_id       UUID PRIMARY KEY DEFAULT gen_random_uuid(),   
     agent_id        UUID NOT NULL REFERENCES agents(agent_id),  
     memory_type     STRING NOT NULL,    
