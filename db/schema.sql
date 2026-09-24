@@ -3,7 +3,7 @@
 
 CREATE TABLE IF NOT EXISTS agents (
     agent_id      UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-    agent_name    STRING NOT NULL UNIQUE, 
+    agent_name    STRING NOT NULL UNIQUE,  
     agent_type    STRING NOT NULL,  
     created_at    TIMESTAMPTZ NOT NULL DEFAULT now()
 ); 
